@@ -10,8 +10,9 @@
 #include "../People.h"
 
 namespace lw {
-	/*static */void greet() {
+	/*static */int greetn() {
 		std::cout << "hello world" << std::endl;
+		return 0;
 	}
 
 	/*static */int add(int a, int b) {
@@ -24,13 +25,14 @@ namespace lw {
 
 	int lw_class_all_luabind(lua_State* L) {
 		using namespace luabind;
-		open(L);
 
-// 		module(L, "lw")[
-// 			def("greet", &greet),
-// 			def("add", (int(*)(int, int))&add),
-// 			def("add", (std::string (*)(const std::string&, const std::string&))&add)
-// 		];
+/*		open(L);*/
+
+		module(L, "lw")[
+/*			def("greet", &greetn),*/
+			def("add", (int(*)(int, int))&add),
+			def("add", (std::string (*)(const std::string&, const std::string&))&add)
+		];
 
 		module(L, "lw")[
 			class_<Common>("Common").def(constructor<>())

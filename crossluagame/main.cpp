@@ -44,6 +44,9 @@ int main(int argc, char **argv) {
 
 	lua_State* L = luaL_newstate();
 	luaL_openlibs(L);
+
+	luabind::open(L);
+
 	lw::lw_class_all_luabind(L);
 	
 	int isOpen = luaL_dofile(L, "./main.lua");
