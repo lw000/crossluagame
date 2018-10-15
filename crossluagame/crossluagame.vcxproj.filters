@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="getopt">
+      <UniqueIdentifier>{eef3bb74-2292-4da1-a9c3-a9814d4c05ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{fdd7f945-75ca-4c3e-84e4-c11347e3fab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{7e65c39b-da63-4ce4-a6a6-57dc302f07c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\scriptbind">
+      <UniqueIdentifier>{aef17740-1d19-46d7-813a-5bb0cabede73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt\getopt.c">
+      <Filter>getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt\getopt_long.c">
+      <Filter>getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Calc.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Common.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\scriptbind\lw_class_luabbind.cpp">
+      <Filter>script\scriptbind</Filter>
+    </ClCompile>
+    <ClCompile Include="script\People.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="getopt\getopt.h">
+      <Filter>getopt</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Calc.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Common.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\scriptbind\lw_class_luabbind.h">
+      <Filter>script\scriptbind</Filter>
+    </ClInclude>
+    <ClInclude Include="script\People.h">
+      <Filter>script</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lua\main.lua">
+      <Filter>lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>
